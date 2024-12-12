@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactarse</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/BenditasSRL/IMG/favicon-32x32.png">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+ 
+    
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/contacto.css">
+
+   <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md  py-3 border-bottom" >
+            <div class="container-fluid">
+              <a class="navbar-brand">BenditasSRL.</a>   
+                </div>
+          </nav>
+    </header>
+    
+    <main>
+        <section class="container">
+
+         <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="/index.html" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+           <!-- elemento define la sección en un documento. -->
+        <div class="form-wrapper">
+            <h2>Contáctanos</h2>
+            <form  id="formRegister" method="POST" novalidate action="https://formspree.io/f/xzzbrbdr" >
+                <div class="form-control">
+                    <label for="firstname">Nombre</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div class="form-control">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+                <div class="error" id="error-lastname"></div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <button type="submit">Enviar</button> 
+                <div class="form-help"> 
+                    <a href="#">Necesitas ayuda?</a>
+                </div>
+            </form>
+</div>
+</section> 
+    </main>
+      
+    
+    <footer id="footer">
+        <div class="container text-center">
+          <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/nadia-speranza/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " aria-hidden="true"></i></a>
+          <a class="cc-github btn btn-link " href="https://github.com/NadiaDevJS" target="_blank"><i class="fa-brands fa-github fa-2x " aria-hidden="true"></i></a>
+          <a class="cc-whatsapp btn btn-link" href="https://api.whatsapp.com/send?phone=541122600513" target="_blank"><i class="fa-brands fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+        <div class="h4 title text-center">Nadia Johanna Speranza</div>
+        <div class="text-center text-muted">
+          <p>&copy; BenditasSRL. All rights reserved.
+        </div>
+      </footer>
+
+      <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+      <script src="https://kit.fontawesome.com/8adb1fb139.js" crossorigin="anonymous"></script> 
+
+    </body>
+</html>
