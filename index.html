@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BENDITAS</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/BenditasSRL/IMG/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/IMG/logo.png">
 
-
-    
+    <!--Tipografia 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Tipografia 2-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
@@ -17,7 +20,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header">
         <nav class="navbar navbar-expand-md  py-3 border-bottom" >
             <div class="container-fluid">
               <a class="navbar-brand" href="/index.html"><img src="/IMG/logo.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">Benditas.</a>
@@ -26,25 +29,25 @@
               </button>
               <div class="offcanvas bg-secondary offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Benditas.</h5>
+                    <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Benditas.</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-level="close"></button>
                 </div>
                 <div class="offcanvas-body" >
-                <ul class="navbar-nav  flex-grow-1 ps-3" >
+                <ul class="navbar-nav  flex-grow-1 ps-3 d-flex justify-content-end align-items-reverse" >
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="/index.html">Inicio</a>
+                    <a class="nav-link " aria-current="page" href="/index.html">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">Acerca de</a>
+                    <a class="nav-link" href="#">Acerca de</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#galeria">Productos</a>
+                    <a class="nav-link" href="#Productos">Productos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link" class="carrito"><i class="fas fa-shopping-cart"></i> </a>
+                    <a href="carrito.html" class="nav-link" class="carrito"><i class="fas fa-shopping-cart"></i> </a>
                   </li>
                     </ul>
                  </div>
@@ -53,176 +56,153 @@
           </nav>
     </header>
 
+    <div id="bienvenidos">
+     BIENVENIDOS/AS A LA TIENDA ONLINE CON LOS MEJORES PERFUMES! <span> / REALIZAMOS ENVIOS A TODO EL PAIS!</span>
+    </div>
+<!-- Carrusel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://picsum.photos/1920/200?random=1" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+          <img src="https://picsum.photos/1920/200?random=2" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+          <img src="https://picsum.photos/1920/200?random=3" class="d-block w-100" alt="Imagen 2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+<br>
+<br>
+
    
  <!-- especifica el contenido principal del documento -->
-    <main class="container mb-5">
+ <main>
 
-       <section  id="galeria">
-         <h2 class="subtitulo">Productos</h2>
-           <div class="contenedor">
-           
+  <section id="top-rated">
+   
+    <div class="container">
+      <h2>Productos</h2>
+            <div id="productos-container" class="row">
+            </div>
 
-               <div class="card" style="width: 18rem;">
-                <div class="row">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">LATTAFA</h5>
-                  <h5 class="card-subtitle">Yara</h5>
-                  <p class="card-text">$80.000</p>
-                  <button type="button" class="badge text-bg-secondary p-3"
-                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                  Añadir al carrito
-                  </button>
-                  </div>
-                </div>
-              </div>
+            <br>
+            <!-- Paginacion -->
+            <div class="d-flex justify-content-between align-items-center">
+              <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+              <span id="page-info"></span>
+              <button id="next-btn" class="btn btn-secondary">Siguiente</button>
+           </div>
+    </div>
 
-                <div class="card" style="width: 18rem;">
-                    <div class="row">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">LATTAFA</h5>
-                      <h5 class="card-subtitle">Haya</h5>
-                      <p class="card-text">$50.000</p>
-                      <button type="button" class="badge text-bg-secondary p-3"
-                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                  Añadir al carrito
-                      </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card" style="width: 18rem;">
-                    <div class="row">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">LATTAFA</h5>
-                      <h5 class="card-subtitle">Mayar</h5>
-                      <p class="card-text">$70.000</p>
-                      <button type="button" class="badge text-bg-secondary p-3"
-                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                  Añadir al carrito
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card" style="width: 18rem;">
-                    <div class="row">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">LATTAFA</h5>
-                      <h5 class="card-subtitle">Asad</h5>
-                      <p class="card-text">$90.000</p>
-                      <button type="button" class="badge text-bg-secondary p-3"
-                      style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                      Añadir al carrito
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-               </div>
-           
-</section>
+  </section>    
        
 <section id="top-rated">
-  <div class="container">
+  <div class="container-resenias">
       <h2>Reseñas</h2>
-      <div id="top-rated-list" class="reseña-grid">
-          <div class="reseña-item">
+      <div id="top-rated-list" class="resenia-grid">
+          <div class="resenia-item">
             <div class="wrapper">
-              <img src="https://picsum.photos/200/300/?blur" alt="" class="movie-item-img-v2">
+              <img src="https://picsum.photos/200/300?random=1" alt="" class="img-v2">
           </div>
-              <div class="reseña-item-detail">
-                  <p class="reseña-item-detail-title"> Producto 1</p>
-                  <p class="reseña-item-detail-subtitle">Superó mis expectativas ⭐⭐⭐⭐⭐</p>
+              <div class="resenia-item-detail">
+                  <p class="resenia-item-detail-title"> Producto 1</p>
+                  <p class="resenia-item-detail-subtitle">Superó mis expectativas ⭐⭐⭐⭐⭐</p>
               </div>
           </div>
-          <div class="reseña-item">
+          <div class="resenia-item">
               <div class="wrapper">
-                  <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+                  <img src="https://picsum.photos/200/300?random=2" alt="" class="img-v2">
               </div>
-              <div class="reseña-item-detail">
-                  <p class="reseña-item-detail-title">Producto 2</p>
-                  <p class="reseña-item-detail-subtitle">Excelente producto, super conforme con la compra. ⭐⭐⭐⭐⭐</p>
+              <div class="resenia-item-detail">
+                  <p class="resenia-item-detail-title">Producto 2</p>
+                  <p class="resenia-item-detail-subtitle">Excelente producto, super conforme con la compra. ⭐⭐⭐⭐⭐</p>
               </div>
           </div>
-          <div class="reseña-item">
+          <div class="resenia-item">
               <div class="wrapper">
-                  <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+                  <img src="https://picsum.photos/200/300?random=3" alt="" class="img-v2">
               </div>
-              <div class="reseña-item-detail">
-                  <p class="reseña-item-detail-title">Producto 3</p>
-                  <p class="reseña-item-detail-subtitle">Pecio calidad acorde ⭐⭐⭐⭐</p>
+              <div class="resenia-item-detail">
+                  <p class="resenia-item-detail-title">Producto 3</p>
+                  <p class="resenia-item-detail-subtitle">Pecio calidad acorde ⭐⭐⭐⭐</p>
               </div>
           </div>
-          <div class="reseña-item">
+          <div class="resenia-item">
             <div class="wrapper">
-                <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+                <img src="https://picsum.photos/200/300?random=4" alt="" class="img-v2">
             </div>
-            <div class="reseña-item-detail">
-                <p class="reseña-item-detail-title">Producto 4</p>
-                <p class="reseña-item-detail-subtitle">Me encató⭐⭐⭐⭐⭐</p>
+            <div class="resenia-item-detail">
+                <p class="resenia-item-detail-title">Producto 4</p>
+                <p class="resenia-item-detail-subtitle">Me encató⭐⭐⭐⭐⭐</p>
             </div>
         </div>
-        <div class="reseña-item">
+        <div class="resenia-item">
           <div class="wrapper">
-              <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+              <img src="https://picsum.photos/200/300?random=5" alt="" class="img-v2">
           </div>
-          <div class="reseña-item-detail">
-              <p class="reseña-item-detail-title">Producto 5</p>
-              <p class="reseña-item-detail-subtitle">Mejorar su calidad ⭐⭐</p>
+          <div class="resenia-item-detail">
+              <p class="resenia-item-detail-title">Producto 5</p>
+              <p class="resenia-item-detail-subtitle">Mejorar su calidad ⭐⭐</p>
           </div>
       </div>
-      <div class="reseña-item">
+      <div class="resenia-item">
         <div class="wrapper">
-            <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+            <img src="https://picsum.photos/200/300?random=6" alt="" class="img-v2">
         </div>
-        <div class="reseña-item-detail">
-            <p class="reseña-item-detail-title">Producto 6</p>
-            <p class="reseña-item-detail-subtitle">Horrible ⭐</p>
+        <div class="resenia-item-detail">
+            <p class="resenia-item-detail-title">Producto 6</p>
+            <p class="resenia-item-detail-subtitle">Horrible ⭐</p>
         </div>
     </div>
-    <div class="reseña-item">
+    <div class="resenia-item">
       <div class="wrapper">
-          <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+          <img src="https://picsum.photos/200/300?random=7" alt="" class="img-v2">
       </div>
-      <div class="reseña-item-detail">
-          <p class="reseña-item-detail-title">Producto 7</p>
-          <p class="reseña-item-detail-subtitle">Genial ⭐⭐⭐⭐⭐</p>
+      <div class="resenia-item-detail">
+          <p class="resenia-item-detail-title">Producto 7</p>
+          <p class="resenia-item-detail-subtitle">Genial ⭐⭐⭐⭐⭐</p>
       </div>
   </div>
-  <div class="reseña-item">
+  <div class="resenia-item">
     <div class="wrapper">
-        <img src="https://picsum.photos/200/300" alt="" class="movie-item-img-v2">
+        <img src="https://picsum.photos/200/300?random=8" alt="" class="img-v2">
     </div>
-    <div class="reseña-item-detail">
-        <p class="reseña-item-detail-title">Producto 8</p>
-        <p class="reseña-item-detail-subtitle">Muy bueno, lo recomiendo. ⭐⭐⭐⭐⭐</p>
+    <div class="resenia-item-detail">
+        <p class="resenia-item-detail-title">Producto 8</p>
+        <p class="resenia-item-detail-subtitle">Muy bueno, lo recomiendo. ⭐⭐⭐⭐⭐</p>
     </div>
 </div>
 </div>     
   </div>
-</section>       
-      
-       
-      
+</section>        
     </main>
     
-    <footer id="bg-dark text-white text-center text-lg-start mt-5" class="footer">
+    <br>
+<br>
+    <footer class="footer">
       <div class="container p-4">
-        <div class="row">
+       
           <div class="text-center  p-4" id="about"  >
-            <h5 class="text-uppercase">Benditas SRL</h5>
-            <p><span>Benditas SRL</span>
+            <h5 class="text-uppercase">Benditas</h5>
+            <p>
               " Somos una empresa apasionada por el mundo de la perfumería, dedicada a crear fragancias únicas que capturan
               momentos, emociones y la esencia de la personalidad de cada uno de nuestros clientes. En <strong>BENDITAS</strong>,
               creemos que un perfume es mucho más que una fragancia: es una extensión de la identidad de cada persona. "
             </p>
           </div>
         </div>
-      </div>
+      
 
         <div class="text-center p-3" style="background-color: rgba(129, 103, 103, 0.2);">
           <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/nadia-speranza/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " aria-hidden="true"></i></a>
@@ -230,11 +210,16 @@
           <a class="cc-whatsapp btn btn-link" href="https://api.whatsapp.com/send?phone=541122600513" target="_blank"><i class="fa-brands fa-whatsapp fa-2x" aria-hidden="true"></i></a>
         <div class="h4 title text-center">Nadia Johanna Speranza</div>
         <div class="text-center text-muted">
-          <p>&copy; BenditasSRL. All rights reserved.
+          <p>&copy; Benditas. All rights reserved.
         </div>
+      </div>
       </footer>
    
 <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/8adb1fb139.js" crossorigin="anonymous"></script>  
+<script src="https://kit.fontawesome.com/8adb1fb139.js" crossorigin="anonymous"></script> 
+<script src="js/funciones_del_index.js"></script>
+
+
+
   </body>
 </html>
