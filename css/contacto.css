@@ -6,30 +6,15 @@ body::before {
     opacity: 0.5;
     width: 100%;
     height: 100%;
-    background: url("");
     background-position: center;
-    background-size: cover;
+    background-size: cover;  
 }
 
-.header{
-    background-color: #5a4c5a;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-#main {
-    flex: 1; /* Esto empuja el footer al final si el contenido es corto */
-    padding: 20px;
-}
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .d-flex{
     display: flex;
@@ -92,9 +77,33 @@ form .form-control {
     transition: all 0.1s ease;
 }
 
+#birthdate{
+    padding:16px 20px 0px;
+}
 
+#label-birthdate{
+    transform: translateY(-130%);
+    font-size: 0.75rem;
+}
 
+.form-control input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
 
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white; 
+    border-radius: 25px;
+
+}
 
 .form-select option{
     color:#2a2a2a;
@@ -150,25 +159,28 @@ form .form-terms :where(label, a) {
     font-size: 0.9rem;
 }
 
-
-/* Estilo para el footer fijo */
-#footer {
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    gap: 20px;
-    align-items: center;
-    background-color: #fff;
-    text-align: center;
-    padding: 10px;
+.form-wrapper p a {
+    color: #fff;
 }
 
-#footer a{
-    text-decoration: none;
-    color: #858282;
-
+.form-wrapper small {
+    display: block;
+    margin-top: 15px;
+    color: #b3b3b3;
 }
+
+.form-wrapper small a {
+    color: #0071eb;
+}
+
+.error{
+    color: red;
+    margin-bottom: 5px;
+}
+.form-control input.error, .form-select.error{
+    border: 2px solid red; 
+}
+
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {

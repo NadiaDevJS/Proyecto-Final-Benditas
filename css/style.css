@@ -87,14 +87,14 @@ nav a.carrito i {
     margin-bottom: 20px;
 }
 
-.container-productos>div {
+.productos-container>div{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     background-color: #2D4263;
     border-radius: 20px;
 }
 
-#container-productos>:hover{
-    background-color: #11294d;
+#productos-container>:hover{
+    background-color: #5c2d55;
 }
 
 .informacion{
@@ -125,6 +125,7 @@ nav a.carrito i {
     height: 35;
     border-radius: 10px;
     border: none;
+    
 
     font-size: 17px;
     font-weight: 300;
@@ -134,6 +135,13 @@ nav a.carrito i {
 .informacion button:hover{
     background-color: #2D4263;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .d-flex{
     display: flex;
@@ -222,19 +230,6 @@ nav a.carrito i {
     margin: 3px 0px;
 }
 
- /* Footer*/
- .footer {
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    gap: 20px;
-}
-
-.footer a{
-    text-decoration: none;
-    color: #858282;
-
-}
 
 
  /* TABLETS */

@@ -6,9 +6,14 @@
     <title>Contactarse</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="/BenditasSRL/IMG/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/IMG/logo.png">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,35 +30,28 @@
 
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-md  py-3 border-bottom" >
-            <div class="container-fluid">
-              <a class="navbar-brand">BenditasSRL.</a>   
-                </div>
-          </nav>
-    </header>
-    
-    <main>
-        <section class="container">
+  <header class="bg-secondary text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1>BENDITAS</h1>
+        <div class="d-flex align-items-center">
+            <i class="fas fa-user-circle fa-2x me-2"></i>
+            <span>Nadia Speranza</span>
+        </div>
+    </div>
+</header>
 
-         <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="/index.html" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-           <!-- elemento define la sección en un documento. -->
-        <div class="form-wrapper">
-            <h2>Contáctanos</h2>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+  <li class="page-item"><a class="page-link" href="/index.html">ANTERIOR</a></li>
+  </ul>
+</nav>
+
+    
+    <!-- elemento define la sección en un documento. -->
+    <section class="container mt-5">
+       
+          <div class="row">
+            <h2 class="text-center text-dark mb-4">Contáctanos</h2>
             <form  id="formRegister" method="POST" novalidate action="https://formspree.io/f/xzzbrbdr" >
                 <div class="form-control">
                     <label for="firstname">Nombre</label>
@@ -75,19 +73,28 @@
                 </div>
             </form>
 </div>
+
+<div class="row">
+  <h3 class="text-center text-dark mb-4">Encuéntranos aquí</h3>
+  <br>
+  <div class="text-center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167135736465!2d-58.38414532425985!3d-34.603738872954246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1734359265932!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
 </section> 
-    </main>
+ 
       
     
-    <footer id="footer">
-        <div class="container text-center">
-          <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/nadia-speranza/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " aria-hidden="true"></i></a>
-          <a class="cc-github btn btn-link " href="https://github.com/NadiaDevJS" target="_blank"><i class="fa-brands fa-github fa-2x " aria-hidden="true"></i></a>
-          <a class="cc-whatsapp btn btn-link" href="https://api.whatsapp.com/send?phone=541122600513" target="_blank"><i class="fa-brands fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-        <div class="h4 title text-center">Nadia Johanna Speranza</div>
-        <div class="text-center text-muted">
-          <p>&copy; BenditasSRL. All rights reserved.
-        </div>
+    <footer  class="bg-dark text-white text-center text-lg-start mt-5">
+      <div class="text-center p-3" style="background-color: rgba(129, 103, 103, 0.2);">
+        <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/nadia-speranza/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-github btn btn-link "  href="https://github.com/NadiaDevJS" target="_blank"><i class="fa-brands fa-github fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-whatsapp btn btn-link" href="https://api.whatsapp.com/send?phone=541122600513" target="_blank"><i class="fa-brands fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+      <div class="h4 title text-center">Nadia Johanna Speranza</div>
+      <div class="text-center text-muted">
+        <p>&copy; Benditas. All rights reserved.
+      </div>
+    </div>
       </footer>
 
       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
