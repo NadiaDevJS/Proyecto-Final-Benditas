@@ -32,7 +32,10 @@ header{
     top: 0;
     position: fixed;
     width: 100%;
-
+}
+.scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #333;
 }
 
 #bienvenidos{
