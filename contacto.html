@@ -30,6 +30,7 @@
 
 
 <body>
+  
   <header class="bg-secondary text-white p-3">
     <div class="container d-flex justify-content-between align-items-center">
         <h1>BENDITAS</h1>
@@ -47,11 +48,9 @@
 </nav>
 
     
-    <!-- elemento define la sección en un documento. -->
-    <section class="container mt-5">
-       
-          <div class="row">
-            <h2 class="text-center text-dark mb-4">Contáctanos</h2>
+      <div class="col-md-6 contact-container">
+          <div class="form-wrapper">
+            <h2 class="text-center text-dark mb-3">Contáctanos</h2>
             <form  id="formRegister" method="POST" novalidate action="https://formspree.io/f/xzzbrbdr" >
                 <div class="form-control">
                     <label for="firstname">Nombre</label>
@@ -67,23 +66,25 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
                 </div>
-                <button type="submit">Enviar</button> 
+                <button type="submit" >Enviar</button> 
                 <div class="form-help"> 
                     <a href="#">Necesitas ayuda?</a>
                 </div>
             </form>
+  </div>
 </div>
 
-<div class="row">
-  <h3 class="text-center text-dark mb-4">Encuéntranos aquí</h3>
-  <br>
+
+<div class="container mt-4  map-container">
+  <div class="row">
+    <h3 class="text-center text-dark mb-4">Encuéntranos aquí</h3>
+    <br>
   <div class="text-center">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167135736465!2d-58.38414532425985!3d-34.603738872954246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1734359265932!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
-</section> 
- 
-      
+      </div>
+    </div>
+  </div>
+   
     
     <footer  class="bg-dark text-white text-center text-lg-start mt-5">
       <div class="text-center p-3" style="background-color: rgba(129, 103, 103, 0.2);">
@@ -98,7 +99,7 @@
       </footer>
 
       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-      <script src="https://kit.fontawesome.com/8adb1fb139.js" crossorigin="anonymous"></script> 
-
+      <script src="https://kit.fontawesome.com/8adb1fb139.js" crossorigin="anonymous"></script>  
+      <script src="./js/validation-register.js"></script>
     </body>
 </html>
