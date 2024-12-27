@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () =>
     {
         Swal.fire({
             title: 'Compra Procesada',
-            text: 'Se ha procesado la compra',
+            text: 'Gracias por tu compra',
             icon: 'success',
-            confirmButtonText: 'Aceptar'
+            confirmButtonText: 'OK'
         });
 
       
@@ -65,6 +65,6 @@ document.addEventListener("DOMContentLoaded", () =>
         
         setTimeout(() => {
         window.location.href = 'index.html'; 
-        }, 3000);     
+        }, 4000);     
     });
 });
